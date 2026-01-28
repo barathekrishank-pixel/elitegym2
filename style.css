@@ -1,0 +1,84 @@
+/* BASIC RESET */
+* {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+body {background: #fafafa; color:#222; line-height:1.6;}
+a {text-decoration:none; color:inherit;}
+
+/* NAVBAR */
+nav {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1rem 2rem; background:#111; color:#fff; position:sticky; top:0; z-index:100;
+}
+nav .logo {font-size:1.5rem; font-weight:bold;}
+nav .nav-links {display:flex; gap:1rem;}
+nav .nav-links a:hover {color:#ff4b2b;}
+nav .cta a {
+  background:#ff4b2b; padding:0.6rem 1rem; border-radius:5px; color:#fff;
+  transition:0.3s;
+}
+nav .cta a:hover {background:#e63e1a;}
+
+/* HERO */
+#hero {
+  height:95vh; background: url("https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg") center/cover no-repeat;
+  position:relative; display:flex; justify-content:center; align-items:center;
+}
+.hero-overlay {
+  position:absolute; top:0; left:0; right:0; bottom:0;
+  background:rgba(0,0,0,0.5);
+}
+.hero-text {
+  position:relative; text-align:center; color:#fff;
+}
+.hero-text h1 {font-size:3rem; margin-bottom:1rem;}
+.hero-text p {font-size:1.2rem; margin-bottom:1.5rem;}
+.hero-text .btn {
+  background:#ff4b2b; padding:0.8rem 1.6rem; border-radius:5px; color:#fff;
+  transition:0.3s;
+}
+.hero-text .btn:hover {background:#e63e1a;}
+
+/* SERVICES */
+#services {padding:3rem 2rem; text-align:center;}
+#services h2 {margin-bottom:1.5rem;}
+.service-cards {
+  display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap;
+}
+.service-cards .card {
+  width:280px; background:#fff; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  overflow:hidden; transition:0.3s;
+}
+.service-cards .card:hover {transform:translateY(-5px);}
+.service-cards .card img {width:100%; height:180px; object-fit:cover;}
+.service-cards .card h3 {margin:1rem 0 0.5rem;}
+.service-cards .card p {padding:0 1rem 1rem; font-size:0.95rem;}
+
+/* ABOUT */
+#about {padding:3rem 2rem; background:#fff; text-align:center;}
+#about h2 {margin-bottom:1rem;}
+
+/* TESTIMONIALS */
+#testimonials {padding:3rem 2rem; text-align:center;}
+.reviews {max-width:600px; margin:1rem auto;}
+.review {display:none; font-style:italic; padding:1rem;}
+.review.active {display:block;}
+
+/* CONTACT */
+#contact {padding:3rem 2rem; background:#fff; text-align:center;}
+#contact form {
+  max-width:450px; margin:1rem auto; display:flex; flex-direction:column; gap:1rem;
+}
+#contact input, #contact textarea {
+  padding:0.8rem; border:1px solid #ccc; border-radius:5px;
+}
+#contact button {
+  background:#ff4b2b; color:#fff; padding:0.8rem; border:none; border-radius:5px;
+}
+#contact button:hover {background:#e63e1a;}
+
+/* FOOTER */
+footer {text-align:center; padding:1rem; background:#111; color:#fff;}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+  .service-cards {flex-direction:column; align-items:center;}
+}
